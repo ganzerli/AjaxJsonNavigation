@@ -23,7 +23,6 @@ btn.addEventListener("click", function() {
     json=JSON.parse(req.responseText);
    // rawJSON.innerHTML=html + JSON.stringify(json);
     manageRender(json); // transfet in html all and charges in pages
-   	containerTransition();
   };
   
   btn.classList.add("hide-me");
