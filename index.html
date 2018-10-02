@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ajax example</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>JSON && AJAX</h1>
+  <button id="btn">Fetch Info for 100 New Elements</button> 
+  <input type="text" id="pageSize" name="pageSize" onkeyup="regEx()" placeholder="num">
+  <button id="previous"> < </button>
+  <button id="next"> > </button>
+  <div id="pageN"></div>
+</header>
+
+<div id="info"></div>
+<div id="rawJSON"></div> <!-- only for demonstrating proposal -->
+
+<script src="main.js"></script>
+<script src="ajaxModule.js"></script>
+</body>
+</html>
