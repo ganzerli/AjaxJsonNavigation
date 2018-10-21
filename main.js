@@ -41,7 +41,7 @@ function manageRender(data) {
   pagesHandler(); // start the navigation capability of buttons.
 }
 
-function pagesHandler(){
+function pagesHandler(){ // this could be nicer
   btnPrev = document.getElementById('previous');
   btnNext =  document.getElementById('next');
   let np =  parseInt(HtmlChunkArray.length / elementsPerPage) + 1; // to leave the reminder
