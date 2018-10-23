@@ -44,9 +44,10 @@ function manageRender(data) {
 function pagesHandler(){ // this could be nicer
   btnPrev = document.getElementById('previous');
   btnNext =  document.getElementById('next');
-  let np =  parseInt(HtmlChunkArray.length / elementsPerPage) + 1; // to leave the reminder
+  let np =  parseInt(HtmlChunkArray.length / elementsPerPage); // to leave the reminder
 
   btnNext.addEventListener('click',()=>{
+
     if(pageN+1 < np ){
       btnPrev.disabled=false;
       infoContainer.innerHTML="";
@@ -77,7 +78,8 @@ function definePages(chunk, limit){
   for (i=0; i < (chunk.length/limit)+1; i++){
     definedPages.push(chunkCopy.splice(0,limit) );
   }
-  if(definedPages[definedPages.length -1] == undefined){
+ 
+  if(definedPages[definedPages.length -1].length <1){
     definedPages.pop(); // the array has a space for the reminder,if not needed get pop()'d.
   }
   console.log(HtmlChunkArray.length);
@@ -109,8 +111,8 @@ function JsonToHtmlArray(jsonArray){
 }
 
 function pagesIndication(){ 
-let n = pageN + 1;
-let np = parseInt(HtmlChunkArray.length / elementsPerPage) + 1;
+let n = pageN+1; // now was 0
+let np = parseInt(HtmlChunkArray.length / elementsPerPage);
 document.getElementById('pageN').innerHTML ="page #"+ n + " of "+ np ;
 }
 
