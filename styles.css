@@ -19,20 +19,21 @@ h1 {
   font-weight: bolder;
   display: inline-block;
   color:white;
-  text-shadow: 0 0 .8em  #00d6fc;
+  text-shadow: 0 0 .8em  #7cb7ff;
 }
 
 body {
   font-family: Helvetica, sans-serif;
   padding: 50px 10%;
+  background-color:rgba(244,194,102,.6);
 }
 
 button {
   background-color: #fce37e;
   color: #FFF;
   border: none;
-  padding: 1em;
-  font-size: 15px;
+  padding: .5em;
+  font-size: 1.5rem;
   border-radius: .2em;
   cursor: pointer;
   outline: none;
@@ -64,7 +65,7 @@ p {
 }
 
 .container{
-  background-color:#7efc7e;  
+  background-color:rgba(89,230,150,.8);  
   width:15em;
   display: inline-block;
   padding:1em;
@@ -72,6 +73,7 @@ p {
   color:#7e7efc;
   position:relative;
   border-radius: .2em;
+  box-shadow: 1px 1px 3px 1px rgba(3,3,3,.2)
 }
 
 #pageSize{
